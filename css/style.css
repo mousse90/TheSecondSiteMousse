@@ -2,10 +2,56 @@
   --color-primary: #687ded;
   --color-secondary: #14234b;
   --color-headings: #2d3a58; /*color for grey headings*/
-  --color-body-bold: #6a6a6a;
-  --color-body-light: lightgrey;
+  --color-body-bold: #4a4949;
+  --color-body-light: rgb(113, 113, 113); /*classical paragraph*/
+}
+
+html {
+  font-size: 62.5%;
 }
 
 body {
-  background: gold;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  color: var(--color-body-light);
+  font-size: 1.8rem;
+  line-height: 1.4; /*1.3 the current font-size*/
 }
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--color-headings);
+  margin-bottom: 1rem;
+}
+h1 {
+  font-size: 9rem;
+}
+h2 {
+  font-size: 7rem;
+}
+h3 {
+  font-size: 5rem;
+}
+h4 {
+  font-size: 2.3rem;
+}
+
+p {
+  margin-top: 0;
+}
+
+@media screen and (min-width: 1024px) {
+  h1 {
+    font-size: 8rem;
+  }
+  h2 {
+    font-size: 6rem;
+  }
+  h3 {
+    font-size: 4rem;
+  }
+  h4 {
+    font-size: 2.1rem;
+  }
+} ;
