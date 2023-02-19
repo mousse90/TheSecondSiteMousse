@@ -6,6 +6,7 @@
   --color-body-light: rgb(113, 113, 113); /*classical paragraph*/
 }
 
+/*Typography*/
 html {
   font-size: 62.5%;
 }
@@ -54,4 +55,31 @@ p {
   h4 {
     font-size: 2.1rem;
   }
-} ;
+}
+
+/*Link*/
+
+a {
+  text-decoration: none;
+}
+
+.purple {
+  color: var(--color-primary);
+}
+
+.dark-blue {
+  color: var(--color-secondary);
+  font-weight: bold;
+}
+
+/*Lists*/
+.list {
+  list-style: none;
+  padding-left: 0;
+  font-weight: 500;
+}
+
+.list--inline .list__item {
+  display: inline-block;
+  margin-right: 2.5rem;
+}
