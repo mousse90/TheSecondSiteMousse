@@ -83,3 +83,35 @@ a {
   display: inline-block;
   margin-right: 2.5rem;
 }
+
+/*Icons*/
+
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+.icon-container .icon {
+  fill: white;
+}
+
+.icon-container {
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-pinterest {
+  background: #ea0000;
+}
+.icon-google {
+  background: #ff5b25;
+}
+.icon-instagram {
+  background: #21af5a;
+}
+.icon-website {
+  background: #687ded;
+}
