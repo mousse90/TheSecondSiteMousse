@@ -72,6 +72,30 @@ a {
   font-weight: bold;
 }
 
+/*Badges*/
+.badge {
+  background: lightgrey;
+  border-radius: 15px;
+  font-weight: 400;
+  padding: 0.5rem 1rem;
+  white-space: nowrap;
+}
+
+.badge--green {
+  background: #21af5a;
+  color: white;
+}
+
+.badge--small {
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .badge--small {
+    font-size: 1.1rem;
+  }
+}
+
 /*Lists*/
 .list {
   list-style: none;
