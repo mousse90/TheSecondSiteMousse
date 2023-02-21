@@ -239,3 +239,21 @@ span {
     font-size: 1.2rem;
   }
 }
+
+/*Input*/
+.input {
+  padding: 1.4rem 1.2rem;
+  font-size: 1.4rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  color: var(--color-body-bold);
+}
+::placeholder {
+  color: #cdcbd7;
+}
+@media screen and (min-width: 1024px) {
+  .input {
+    font-size: 1.2rem;
+  }
+}
