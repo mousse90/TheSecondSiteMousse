@@ -6,6 +6,12 @@
   --color-body-light: rgb(113, 113, 113); /*classical paragraph*/
 }
 
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 /*Typography*/
 html {
   font-size: 62.5%;
@@ -138,4 +144,98 @@ a {
 }
 .icon-website {
   background: #687ded;
+}
+
+/*button*/
+
+.button {
+  border-radius: 10px;
+  border: 0;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: bold;
+  margin: 1rem;
+  padding: 1.7rem 2rem;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.button--outline {
+  /*With an outline button, the color is black*/
+  /*here structure and skin are in the same place because I consider there is not
+  outline button without logo and badge*/
+  height: 70px;
+  border: 1px solid lightgray;
+  font-weight: 300;
+  color: black;
+  background: white;
+  transition: color 0.5s ease-in-out;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button--outline > p,
+span {
+  padding: 0 5px;
+}
+
+.button--outline:hover {
+  color: rgb(0, 187, 255);
+}
+
+.button--outline svg {
+  width: 20px;
+  height: 20px;
+}
+.button--outline p {
+  margin: auto;
+}
+
+.button--blue {
+  background: var(--color-primary);
+  color: white;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.button--white {
+  background: white;
+  color: var(--color-secondary);
+  transition: color 0.5s ease-in-out;
+}
+
+.button--dark {
+  background: var(--color-secondary);
+  color: white;
+  transition: background 0.5s ease-in-out;
+}
+
+.button--blue:hover {
+  opacity: 0.9;
+}
+
+.button--white:hover {
+  color: var(--color-primary);
+}
+
+.button--dark:hover {
+  background: var(--color-primary);
+  color: white;
+}
+
+.button--adaptable {
+  width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  .button {
+    font-size: 1.7rem;
+  }
+
+  .button--outline {
+    height: 50px;
+
+    font-size: 1.2rem;
+  }
 }
