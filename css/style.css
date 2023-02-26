@@ -4,6 +4,8 @@
   --color-headings: #2d3a58; /*color for grey headings*/
   --color-body-bold: #4a4949;
   --color-body-light: rgb(113, 113, 113); /*classical paragraph*/
+  --color-border: #ccc;
+  --border-radius-input: 5px;
 }
 
 *,
@@ -114,6 +116,12 @@ a {
   margin-right: 2.5rem;
 }
 
+/*Line-list inside plans*/
+.list__line {
+  display: flex;
+  align-items: center;
+}
+
 /*Icons*/
 
 .icon {
@@ -144,6 +152,14 @@ a {
 }
 .icon-website {
   background: #687ded;
+}
+.icon-search {
+  /*for input group of search bar*/
+  background: lightgray;
+}
+.icon-search svg {
+  width: 20px;
+  height: 20px;
 }
 
 /*button*/
@@ -188,8 +204,9 @@ span {
   width: 20px;
   height: 20px;
 }
+
 .button--outline p {
-  margin: auto;
+  margin: 1rem auto;
 }
 
 .button--blue {
@@ -244,16 +261,129 @@ span {
 .input {
   padding: 1.4rem 1.2rem;
   font-size: 1.4rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-input);
   outline: none;
   color: var(--color-body-bold);
 }
 ::placeholder {
   color: #cdcbd7;
 }
+
+.input-group {
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-input);
+  display: flex;
+}
+
+.input-group .input {
+  border: 0;
+  flex-grow: 1;
+}
+
+.input-group .icon-container {
+  width: 60px;
+  height: 60px;
+  border-radius: var(--border-radius-input);
+}
+
+.input-group .button {
+  margin: 0.4rem;
+  border-radius: var(--border-radius-input);
+}
+
 @media screen and (min-width: 1024px) {
   .input {
     font-size: 1.2rem;
+  }
+}
+
+/*Button-group*/
+.button-group {
+  display: flex;
+}
+.button-group .button {
+  margin: 0;
+  height: 45px;
+  font-size: 1.5rem;
+  border-radius: 0;
+}
+
+/*Javascript : also change z index of the previous rule
+.test {
+  z-index: 1;
+}
+*/
+.input-group {
+  margin-top: -2px;
+}
+
+@media screen and (min-width: 1024px) {
+  .button-group .button {
+    font-size: 1.3rem;
+  }
+}
+
+/*Plans*/
+
+.plan {
+  border-radius: 20px;
+  box-shadow: 0 0 20px 10px #f3f3f3;
+  padding: 5rem;
+}
+
+.plan__header {
+  text-align: center;
+}
+.plan__price {
+  display: flex;
+  justify-content: center;
+}
+.plan__currency {
+  font-size: 2rem;
+  color: var(--color-primary);
+}
+
+.plan .plan__amount {
+  font-size: 8rem;
+}
+
+.plan .button {
+  white-space: initial;
+  margin-left: 0rem;
+}
+
+.plan .plan__price {
+  margin-top: 1rem;
+}
+
+.plan .list {
+  font-size: 1.7rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+}
+
+.plan .list__line {
+  margin-bottom: 1rem;
+}
+
+.plan .list__line--logo {
+  padding-top: 12px;
+}
+
+.plan .list__line--content {
+  padding-left: 1rem;
+}
+
+.plan--middle .plan__heading {
+  background-image: url(../images/background-img-marianne-bg_left.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .plan .plan__amount {
+    font-size: 6rem;
   }
 }
