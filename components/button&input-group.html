@@ -1,25 +1,25 @@
-<!--the button-group-->
+<!--the button-group
+Hereafter the different id : url, google, inta, pint, pint-bulk, insta-bulk-->
 <div class="button-group">
-  <button class="button button--outline">
+  <button id="url" class="button button--outline">
     <svg class="icon">
       <use xlink:href="images/sprite2.svg#logo-google-black"></use>
     </svg>
     <p>Google</p>
-    <span class="badge badge--green badge--small">bulk</span>
   </button>
 
   <!--here with the class 'test' (to be implemented in javascript and put :
-    1 : all the non selected in z-index 1 (>with the class : 'test'), the selected in
-  2: show a specific placeholder linked to the selected button-->
+  1 : all the non selected in z-index 1 (>with the class : 'test'), the selected in
+2: show a specific placeholder linked to the selected button-->
 
-  <button class="button button--outline test">
+  <button id="insta" class="button button--outline">
     <svg class="icon">
       <use xlink:href="images/sprite2.svg#logo-insta-black"></use>
     </svg>
     <p>Instagram</p>
   </button>
 
-  <a class="button button--outline" href="#"
+  <a id="pint-bulk" class="button button--outline" href="#"
     ><svg class="icon">
       <use xlink:href="images/sprite2.svg#logo-pinterest-black"></use>
     </svg>
@@ -27,7 +27,7 @@
     <span class="badge badge--green badge--small">bulk</span></a
   >
 
-  <button class="button button--outline">
+  <button id="google-bulk" class="button button--outline">
     <svg class="icon">
       <use xlink:href="images/sprite2.svg#logo-google-black"></use>
     </svg>
@@ -39,6 +39,7 @@
 <!--the input-group-->
 <div class="input-group">
   <input
+    id="input-group"
     class="input"
     type="text"
     placeholder="https://pinterest.jp/pin/1242688353682/"

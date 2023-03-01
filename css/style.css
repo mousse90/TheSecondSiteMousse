@@ -306,14 +306,15 @@ span {
   margin: 0;
   height: 45px;
   font-size: 1.5rem;
-  border-radius: 0;
+  border-radius: 0px;
+  box-shadow: 1px 1px 15px 3px var(--color-primary);
 }
 
-/*Javascript : also change z index of the previous rule
-.test {
+/*Javascript : also change z index of the previous rule, see: button-input-group.js*/
+.button--outline {
   z-index: 1;
 }
-*/
+
 .input-group {
   margin-top: -2px;
 }
