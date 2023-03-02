@@ -1,0 +1,33 @@
+<svg width="0" height="0" class="hidden">
+  <symbol fill="currentColor" version="1.1" id="quotes" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" viewBox="0 0 32 32">
+    <g>
+      <path d="M13,11c0.6,0,1-0.4,1-1s-0.4-1-1-1c-5,0-9,4-9,9c0,2.8,2.2,5,5,5s5-2.2,5-5s-2.2-5-5-5c-0.3,0-0.7,0-1,0.1
+		C9.3,11.8,11,11,13,11z"></path>
+      <path d="M23,13c-0.3,0-0.7,0-1,0.1c1.3-1.3,3-2.1,5-2.1c0.6,0,1-0.4,1-1s-0.4-1-1-1c-5,0-9,4-9,9c0,2.8,2.2,5,5,5s5-2.2,5-5
+		S25.8,13,23,13z"></path>
+    </g>
+  </symbol>
+  <symbol fill="currentColor" version="1.1" id="quotes-end" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" viewBox="0 0 32 32">
+    <g>
+      <path d="M23,9c-2.8,0-5,2.2-5,5s2.2,5,5,5c0.3,0,0.7,0,1-0.1c-1.3,1.3-3,2.1-5,2.1c-0.6,0-1,0.4-1,1s0.4,1,1,1c5,0,9-4,9-9
+		C28,11.2,25.8,9,23,9z"></path>
+      <path d="M9,9c-2.8,0-5,2.2-5,5s2.2,5,5,5c0.3,0,0.7,0,1-0.1C8.7,20.2,7,21,5,21c-0.6,0-1,0.4-1,1s0.4,1,1,1c5,0,9-4,9-9
+		C14,11.2,11.8,9,9,9z"></path>
+    </g>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 87.8" id="popular">
+    <path fill="#1e0f6d" d="M0 4.7h35L30.3 0H5.1L0 4.7z"></path>
+    <g>
+      <path fill="#1b0760" d="M5.3.2v87l11.9-11.9 12.5 12.5V.2H5.3z"></path><text transform="rotate(90 1.05 12.25)" font-size="15" fill="#fff" font-family="Inter-Bold,Inter" font-weight="700">
+        <tspan letter-spacing="-.01em">P</tspan>
+        <tspan x="9.6" y="0">opular</tspan>
+      </text>
+    </g>
+  </symbol>
+  <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25.221 25.362" id="check">
+    <g id="tick-price" transform="translate(0 1.362)">
+      <circle id="Ellipse_687" cx="12" cy="12" r="12" fill="#5a52ff" opacity="0.305"></circle>
+      <path id="Path_16301" d="M6.676,9.378c6.232,12.59,1.611,8.267,16.746-8.941" fill="none" stroke="#5a52ff" stroke-linecap="round" stroke-width="2.55" fill-rule="evenodd"></path>
+    </g>
+  </symbol>
+</svg>

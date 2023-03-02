@@ -388,3 +388,35 @@ span {
     font-size: 6rem;
   }
 }
+
+/*media*/
+.media--heading {
+  /*change the margin upside h2*/
+  margin-top: 2rem;
+  line-height: 6.3rem;
+}
+
+.media--line {
+  display: inline-block;
+  width: 100%;
+  border: 0.5px solid rgba(211, 211, 211, 0.701);
+  margin: 2rem 0 3rem 0;
+}
+
+.media__text .icon {
+  width: 20px;
+  height: 20px;
+  color: var(--color-headings);
+}
+
+.media p,
+span {
+  color: var(--color-headings);
+}
+
+@media screen and (min-width: 1024px) {
+  .media p,
+  span {
+    font-size: 1.6rem;
+  }
+}
