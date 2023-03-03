@@ -1,0 +1,74 @@
+<!--construction order :
+- [1] media (the bigger) on home page (at the right) [in a separate html]
+- [2] small-media it's the 'media'[1], reduced and put in flex mode, to use alone
+"small-media"
+- [3] small-media-center , the 'small-media'[2], but centered, so to use together
+"small-media small-media-center"
+- [4] media-testimonial, to be used alone
+-->
+
+<!--small-media-->
+<!--Style thistle color to be removed-->
+<div style="background-color: thistle" class="small-media">
+  <div class="media__image">
+    <span class="icon-container icon-google">
+      <svg class="icon">
+        <use xlink:href="images/sprite2.svg#logo-insta-black"></use>
+      </svg>
+    </span>
+  </div>
+  <div class="media__text">
+    <h4 class="media--heading">Website Image Downloader</h4>
+    <p class="media--text">Use Google’s image search and download images</p>
+  </div>
+</div>
+
+<!--small-media small-media-center-->
+<!--Style thistle color to be removed-->
+<!--With button (anchor : 'learn more') to be removed if not needed-->
+<div style="background-color: thistle" class="small-media small-media-center">
+  <div class="media__image">
+    <span class="icon-container icon-google">
+      <svg class="icon">
+        <use xlink:href="images/sprite2.svg#logo-insta-black"></use>
+      </svg>
+    </span>
+  </div>
+  <div class="media__text">
+    <h4 class="media--heading">Website Image Downloader</h4>
+    <p class="media--text">Use Google’s image search and download images</p>
+    <a href="#" class="link-simple purple">Learn More</a>
+  </div>
+</div>
+
+<!--media-testimonial-->
+<!--Style thistle color to be removed-->
+<div style="background-color: thistle" class="media-testimonial">
+  <div class="testimonial__description">
+    <div class="media__image">
+      <span class="icon-container icon-google">
+        <svg class="icon">
+          <use xlink:href="images/sprite2.svg#logo-insta-black"></use>
+        </svg>
+      </span>
+    </div>
+    <div class="media__text">
+      <p>Lorem ipsum dolor</p>
+      <a href="#" class="link-simple purple">Learn More</a>
+    </div>
+  </div>
+  <div class="testimonial__content">
+    <p class="testimonial--text">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta natus
+      praesentium quae eveniet? Rerum veritatis vitae dolorum itaque officiis
+      magni et perspiciatis
+    </p>
+
+    <div class="testimonial__quote">
+      <div class="blank-block"></div>
+      <svg class="icon">
+        <use xlink:href="images/sprite-3.svg#quotes-end"></use>
+      </svg>
+    </div>
+  </div>
+</div>

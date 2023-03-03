@@ -325,6 +325,11 @@ span {
   }
 }
 
+/*container*/
+.container {
+  max-width: 120rem;
+}
+
 /*Plans*/
 
 .plan {
@@ -390,6 +395,13 @@ span {
 }
 
 /*media*/
+
+.media {
+  border-radius: 30px;
+  width: 100%;
+  padding: 3rem;
+}
+
 .media--heading {
   /*change the margin upside h2*/
   margin-top: 2rem;
@@ -420,3 +432,85 @@ span {
     font-size: 1.6rem;
   }
 }
+
+/*Here for small-media*/
+/*small-media to be used separately*/
+.small-media {
+  padding: 2rem;
+  display: flex;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.small-media .media--heading {
+  margin-top: 0rem;
+  line-height: 3rem;
+}
+
+.small-media .media__text {
+  padding-left: 2rem;
+}
+
+.small-media span,
+p {
+  color: var(--color-body-bold);
+  line-height: initial;
+}
+
+/*small-media-center*/
+.small-media.small-media-center {
+  text-align: center;
+  flex-direction: column;
+}
+
+.small-media .media__text {
+  padding: 1rem 0 0 2rem;
+}
+
+/*media-testimonial*/
+
+.media-testimonial {
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.media-testimonial p {
+  margin-bottom: 1rem;
+}
+
+.media-testimonial .media__text {
+  padding: 0rem 2rem;
+}
+
+.testimonial__description {
+  display: flex;
+  align-items: center;
+}
+
+.testimonial--text {
+  padding: 1rem;
+  margin-bottom: 0;
+}
+
+.testimonial__content .icon {
+  direction: rtl;
+  margin-right: 1rem;
+}
+
+.testimonial__quote {
+  display: flex;
+}
+.blank-block {
+  flex-grow: 1;
+}
+
+@media screen and (min-width: 1024px) {
+  .testimonial--text {
+    font-size: 1.7rem;
+  }
+}
+/*
+.testimonial--text::after {
+  content: url(../images/check.svg);
+  
+}*/
