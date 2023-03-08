@@ -197,6 +197,7 @@ span {
 }
 
 .button--outline:hover {
+  /*not working, dont know why. Try it with javascript if needed*/
   color: rgb(0, 187, 255);
 }
 
@@ -514,3 +515,134 @@ p {
   content: url(../images/check.svg);
   
 }*/
+
+/*collapsible*/
+
+.collapsible {
+  color: white;
+}
+
+.collapsible__heading {
+  color: white;
+}
+
+.collapsible__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.collapsible__heading {
+  margin-top: 0;
+}
+
+.collapsible__heading::before {
+  content: "--> ";
+}
+
+.collapsible--chevron {
+  color: var(--color-border);
+  width: 50px;
+  height: 50px;
+  transform: rotate(0deg);
+  transition: transform 0.5s;
+}
+
+.collapsible--expanded .collapsible--chevron {
+  transform: rotate(90deg);
+}
+
+.collapsible__content {
+  max-height: 0;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.collapsible__content a {
+  color: white;
+  line-height: 4rem;
+}
+
+.collapsible--expanded .collapsible__content {
+  max-height: 100vh;
+}
+
+/*GRIDS*/
+.grid {
+  display: grid;
+}
+
+@media screen and (min-width: 768px) {
+  .grid--1x2 {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .grid--1x3 {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/*nav*/
+.nav a {
+  color: var(--color-headings);
+}
+
+.nav--logo {
+  height: 80px;
+  margin-left: 1rem;
+}
+
+.nav .collapsible--chevron {
+  padding-right: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .nav {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .nav .collapsible--chevron {
+    display: none;
+  }
+
+  .nav li {
+    padding-top: 0.5rem;
+    display: inline-block;
+    margin-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .nav li {
+    text-align: center;
+  }
+
+  .nav.collapsible .collapsible__content {
+    overflow: hidden;
+  }
+
+  .nav .collapsible {
+    position: relative;
+  }
+
+  .nav .sign-in {
+    position: absolute;
+    top: 4px;
+    right: 55px;
+  }
+}
+
+/*footer*/
+
+/*test*/
+.one {
+  position: relative;
+}
+.three {
+  width: 200px;
+  position: absolute;
+  top: 150px;
+  left: 100px;
+}
