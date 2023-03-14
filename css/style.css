@@ -6,6 +6,7 @@
   --color-body-light: rgb(113, 113, 113); /*classical paragraph*/
   --color-border: #ccc;
   --border-radius-input: 5px;
+  --width-input-group: 70vw;
 }
 
 *,
@@ -301,8 +302,15 @@ span {
 
 /*Button-group*/
 .button-group {
+  --button-group-padding: 3rem;
   display: flex;
+  padding-left: calc(var(--button-group-padding) - 1rem);
+  padding-top: var(--button-group-padding);
+  padding-bottom: 0;
+  padding-right: calc(var(--button-group-padding) - 1rem);
+  overflow: hidden;
 }
+
 .button-group .button {
   margin: 0;
   height: 45px;
@@ -634,15 +642,63 @@ p {
   }
 }
 
-/*footer*/
-
-/*test*/
+/*input-container*/
 .one {
   position: relative;
+  background: #f0f5ff;
+  height: 40vh;
 }
+
+.two {
+  background: #21af5a;
+}
+
 .three {
-  width: 200px;
+  padding: 5rem 2rem;
+  border-radius: 20px;
+  box-shadow: 12px 12px 3px 5px rgba(0, 0, 255, 0.2); /*HVFE color*/
   position: absolute;
   top: 150px;
-  left: 100px;
+  left: calc(50vw - 470px); /*for 6 buttons*/
+  width: fit-content;
+  background: white;
 }
+
+.arrow {
+  display: none;
+}
+
+.first-arrow {
+  position: absolute;
+  top: calc(5.2rem + var(--button-group-padding));
+  left: calc(var(--button-group-padding) - 1.5rem);
+  z-index: 99;
+}
+
+.second-arrow {
+  position: absolute;
+  top: calc(5.2rem + var(--button-group-padding));
+  right: calc(50vw - 0.685 * var(--width-input-group));
+  z-index: 99;
+}
+
+@media screen and (max-width: 1024px) {
+  .three {
+    width: var(--width-input-group);
+    left: calc(50vw - 0.5 * var(--width-input-group));
+    overflow: hidden;
+  }
+
+  .arrow {
+    display: initial;
+  }
+
+  .button-group {
+    padding-left: 0rem;
+    /*border-left: 2px solid white;*/
+  }
+}
+
+/**/
+
+/*footer*/
