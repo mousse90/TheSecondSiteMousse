@@ -5,6 +5,7 @@
   --color-body-bold: #4a4949;
   --color-body-light: rgb(113, 113, 113); /*classical paragraph*/
   --color-border: #ccc;
+  --color-media: #f0f5ff;
   --border-radius-input: 5px;
   --width-input-group: 70vw;
   --container-max-width: 1200px;
@@ -338,6 +339,7 @@ span {
 /*container*/
 .container {
   max-width: var(--container-max-width); /*1200px normally*/
+  margin: auto;
 }
 
 /*Plans*/
@@ -449,6 +451,8 @@ span {
   display: flex;
   border-radius: 10px;
   width: 100%;
+  background: white;
+  box-shadow: 12px 12px 1px 1px rgba(0, 0, 255, 0.2);
 }
 
 .small-media .media--heading {
@@ -578,21 +582,38 @@ p {
 .grid {
   display: grid;
   align-items: start;
-  grid-template-areas: "left right";
+  gap: 3rem;
   justify-items: center;
+}
+
+.media-template {
+  /*only avalaible for media-section.html*/
+  grid-template-areas: "left right";
 }
 
 .grid--1x2 {
   grid-template-columns: 1fr;
 }
 
+/*
+.grid--2x3 {
+  grid-template-columns: 1fr;
+}*/
+
 @media screen and (min-width: 768px) {
-  .grid {
-    gap: 3rem;
-  }
   .grid--1x2 {
     grid-template-columns: repeat(2, 1fr);
   }
+}
+
+@media screen and (min-width: 900px) {
+  .grid--2x3 {
+    grid-template: repeat(2, 1fr) / 30% 1fr 1fr;
+  }
+}
+
+.image-media {
+  grid-row: 1 / span 2;
 }
 
 @media screen and (min-width: 1024px) {
@@ -710,9 +731,14 @@ p {
 }
 
 /*side-container*/
+
+.block-media {
+  background: var(--color-media);
+}
+
 .media-section {
   --media-section-article-padding: 5rem;
-  background: #f0f5ff;
+
   height: fit-content;
   padding: 15rem 2rem;
 }
@@ -752,4 +778,15 @@ source {
   .to-hide {
     display: none;
   }
+}
+
+/*small-media-section (where there is image and 4 media (just under the bar search*/
+
+.small-media-block {
+  background: turquoise;
+  padding: 30rem 3rem 10rem;
+}
+
+.small-media-section .grid {
+  align-items: center;
 }
