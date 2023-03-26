@@ -578,7 +578,7 @@ p {
   max-height: 100vh;
 }
 
-/*GRIDS*/
+/*GRIDS*/ /*for footer grid, see footer part*/
 .grid {
   display: grid;
   align-items: start;
@@ -789,4 +789,59 @@ source {
 
 .small-media-section .grid {
   align-items: center;
+}
+
+/*footer*/
+.footer-block {
+  padding: 2rem;
+  background: black;
+}
+
+.footer-block svg {
+  width: 100%;
+  margin-left: 2rem;
+}
+
+.footer-block p {
+  margin-top: 2rem;
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.footer-block__item {
+  white-space: nowrap;
+}
+
+.footer-block__item a,
+header {
+  color: white;
+  line-height: 4rem;
+}
+
+.footer-block__item header::before {
+  content: url(../images/check.svg);
+}
+
+@media screen and (min-width: 800px) {
+  .grid--1x4 {
+    grid-template: 1fr / 25vw 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .grid--1x4 {
+    justify-items: start;
+    grid-template: auto 1fr 0.8fr / repeat(2, 1fr);
+    grid-template-areas:
+      "header header"
+      "menu menu"
+      "menu menu";
+  }
+
+  .footer-block .collapsible__header {
+    grid-area: header;
+    justify-self: center;
+    height: 4rem;
+  }
 }
