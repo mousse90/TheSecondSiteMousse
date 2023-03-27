@@ -482,9 +482,15 @@ p {
 
 /*media-testimonial*/
 
+.block-testimonial {
+  background: var(--color-media);
+  padding: 0 2rem 10rem;
+}
+
 .media-testimonial {
   padding: 2rem;
   border-radius: 10px;
+  background: white;
 }
 
 .media-testimonial p {
@@ -582,25 +588,28 @@ p {
 .grid {
   display: grid;
   align-items: start;
-  gap: 3rem;
   justify-items: center;
 }
 
 .media-template {
   /*only avalaible for media-section.html*/
   grid-template-areas: "left right";
+  position: relative;
 }
 
 .grid--1x2 {
   grid-template-columns: 1fr;
 }
 
-/*
 .grid--2x3 {
-  grid-template-columns: 1fr;
-}*/
+  gap: 2rem;
+}
 
 @media screen and (min-width: 768px) {
+  .grid {
+    gap: 3rem;
+  }
+
   .grid--1x2 {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -674,14 +683,18 @@ p {
 }
 
 /*input-container*/
-.one {
+.hero {
   position: relative;
+}
+
+.one {
   background: #f0f5ff;
   height: 40vh;
 }
 
 .two {
-  background: #21af5a;
+  background: white;
+  height: 30rem;
 }
 
 .three {
@@ -783,8 +796,8 @@ source {
 /*small-media-section (where there is image and 4 media (just under the bar search*/
 
 .small-media-block {
-  background: turquoise;
-  padding: 30rem 3rem 10rem;
+  background: white;
+  padding: 0rem 3rem 10rem;
 }
 
 .small-media-section .grid {
